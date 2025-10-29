@@ -1,0 +1,50 @@
+body, html {
+height: 90%;
+margin: 0;
+}
+.form-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+max-width: 350px;
+margin: 0 auto;
+padding: 30px;
+background-color: #f7f7f7;
+border-radius: 10px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+height: 100vh; /* full screen height */
+}
+.form-container img.avatar {
+width: 100%;
+max-width: 300px; /* You can adjust this size */
+height: auto;
+margin-bottom: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+form, .success-message {
+width: 100%;
+text-align: left;
+}
+input, select {
+width: 100%;
+padding: 10px;
+margin-bottom: 5px;
+border: 1px solid #ccc;
+border-radius: 6px;
+}
+button {
+width: 100%;
+padding: 12px;
+background-color: #28a745;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+}
+button:hover {
+background-color: #1e7e34;
+}

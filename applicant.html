@@ -1,0 +1,32 @@
+<div class="form-container">
+    <img src="assets/Application.png" alt="student" class="avatar">
+    <h3>JOB APPLICATION FORM</h3>
+    <form *ngIf="!submitted">
+        <input type="text" placeholder="Full Name" required [(ngModel)]="fullName" name="name" />
+        <select required [(ngModel)]="position" name="position">
+            <option value="" disabled selected>Select Position</option>
+            <option>Assistant Professor</option>
+            <option>Associate Professor</option>
+            <option>Professor</option>
+        </select>
+        <input type="text" placeholder="Total Experience" required [(ngModel)]="experience" name="experience" />
+        <input type="text" placeholder="Department" required [(ngModel)]="department" name="department" />
+        <select required [(ngModel)]="location" name="location">
+            <option value="" disabled selected>Location</option>
+            <option>Telangana</option>
+            <option>Andhra Pradesh</option>
+        </select>
+        <input type="text" placeholder="Contact Details" required [(ngModel)]="contact" name="contact" />
+        <button type="button" (click)="registerApplicant()">Submit</button>
+    </form>
+
+    <div *ngIf="submitted" class="success-message">
+        <h4> Your Application is sucessfully submitted !</h4>
+        <p><strong>Full Name:</strong> {{ fullName }}</p>
+        <p><strong>Position:</strong> {{ position }}</p>
+        <p><strong>Experience:</strong> {{ experience }}</p>
+        <p><strong>Department:</strong> {{ department }}</p>
+        <p><strong>Location:</strong> {{ location }}</p>
+        <p><strong>Contact:</strong> {{ contact }}</p>
+    </div>
+</div>
