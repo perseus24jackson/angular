@@ -1,15 +1,8 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-selector: 'app-home',
-standalone: true,
-imports: [],
-templateUrl: './home.html',
-styleUrl: './home.css'
+  selector: 'app-home',
+  templateUrl: './home.html',   // 👈 must match filename
+  styleUrls: ['./home.css']
 })
-export class Home {
-  @Output() 
-  goToApplicant = new EventEmitter<void>();
-  @Output() 
-  goToRecruiter = new EventEmitter<void>();
-}
+export class HomeComponent {}

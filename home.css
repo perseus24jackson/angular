@@ -1,66 +1,101 @@
 .home-container {
-    position: relative;
-    text-align: center;
-    height: 100%;
-    color:rgb(205, 250, 4);
-    overflow: hidden;
-}
-.card{
-    height: 250px;
-    width: 500px;
-    background-color: rgb(132, 0, 255);
-    padding:80px;
-    border-radius: 25px;
-    align-items: center;
-    margin-left: 425px;
-    margin-top: 200px;
-    opacity: 0.8;
-}
-.home-container::before{
-    content: '';
-    background-image: url('https://www.financialexpress.com/wp-content/uploads/2024/09/Top-10-high-paying-jobs.jpg?w=440');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.6;
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.home-container h2,
-.home-container button {
-    position: relative;
-    z-index: 1;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  color: #333;
 }
 
-.home-container h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 5px #000;
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(120deg, #4facfe, #00f2fe);
+  color: white;
+  border-radius: 10px;
 }
-.home-container button {
-    margin: 10px;
-    padding: 14px 28px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-.home-container button:first-of-type {
-    background-color: #007bff;
-    color: white;
+
+.hero .highlight {
+  color: #ffe600;
 }
-.home-container button:first-of-type:hover {
-    background-color: #0056b3;
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
-.home-container button:last-of-type {
-    background-color: #28a745;
-    color: white;
+
+.btn-primary {
+  background: #fff;
+  color: #007acc;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
 }
-.home-container button:last-of-type:hover {
-    background-color: #1e7e34;
+
+.about-teaser,
+.skills,
+.projects {
+  margin: 3rem 0;
+}
+
+.about-teaser h2,
+.skills h2,
+.projects h2 {
+  color: #007acc;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #007acc;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #f4f4f4;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  color: #555;
+}
+
+.footer a {
+  color: #007acc;
+  text-decoration: none;
+  margin: 0 5px;
 }
