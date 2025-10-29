@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Product } from './product/product';
-import { Cart } from './cart/cart';
+
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [Product, Cart],
+  standalone: true,        // Optional, but recommended for standalone setup
+  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']  // Fixed typo and array format
 })
 export class App {
-  protected title = 'EXP-6-Services';
+  protected title = 'EXP-4';
 }

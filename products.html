@@ -1,0 +1,67 @@
+<div class="product-container">
+  <h2>
+    Your destination for premium cosmetics that blend beauty, care, and performance.
+    Explore our full range of makeup, skincare, and wellness essentials designed to bring out the best in you.
+  </h2>
+
+  <div class="button-group">
+    <button (click)="selectSection('face')">Face Products</button>
+    <button (click)="selectSection('eyes')">Eye Products</button>
+    <button (click)="selectSection('lips')">Lip Products</button>
+    <button (click)="selectSection('skincare')">Skin Care</button>
+    <button (click)="selectSection('natural')">Natural & Organic</button>
+  </div>
+
+  <div *ngIf="selectedSection === 'face'" class="section">
+    <h3>Face Products</h3>
+    <ul>
+      <li><strong>Foundation:</strong> Lightweight, buildable coverage in many shades.</li>
+      <li><strong>Concealer:</strong> Full coverage for blemishes and dark circles.</li>
+      <li><strong>Compact Powder:</strong> Silky finish, controls oil all day.</li>
+      <li><strong>Primer:</strong> Smooths skin for long-lasting makeup.</li>
+      <li><strong>Blush & Highlighter:</strong> Adds glow and natural flush.</li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedSection === 'eyes'" class="section">
+    <h3>Eye Products</h3>
+    <ul>
+      <li><strong>Eyeshadow Palettes:</strong> Blendable, bold and neutral shades.</li>
+      <li><strong>Eyeliners & Kajal:</strong> Intense color, smudge-proof wear.</li>
+      <li><strong>Mascara:</strong> Lengthening, curling, waterproof formulas.</li>
+      <li><strong>Eyebrow Pencils:</strong> Fill and define naturally.</li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedSection === 'lips'" class="section">
+    <h3>Lip Products</h3>
+    <ul>
+      <li><strong>Lipsticks:</strong> Matte, satin, and liquid formulas.</li>
+      <li><strong>Lip Gloss:</strong> High shine, non-sticky finish.</li>
+      <li><strong>Lip Balm:</strong> Nourishing and tinted options.</li>
+      <li><strong>Lip Liner:</strong> Shapes and prevents feathering.</li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedSection === 'skincare'" class="section">
+    <h3>Skin Care</h3>
+    <ul>
+      <li><strong>Cleansers:</strong> For all skin types, gentle and effective.</li>
+      <li><strong>Toners:</strong> Alcohol-free and hydrating.</li>
+      <li><strong>Serums:</strong> Vitamin C, Niacinamide, Retinol, Hyaluronic Acid.</li>
+      <li><strong>Moisturizers:</strong> Light and rich formulas, with SPF options.</li>
+      <li><strong>Masks & Exfoliators:</strong> Clay, sheet masks and gentle scrubs.</li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedSection === 'natural'" class="section">
+    <h3>Natural & Organic Line</h3>
+    <ul>
+      <li><strong>Aloe Vera Gel:</strong> Multi-use for skin and hair care.</li>
+      <li><strong>Rose Water Mist:</strong> Hydrating and refreshing toner.</li>
+      <li><strong>Herbal Lip Balm:</strong> Organic oils and beeswax blend.</li>
+      <li><strong>Neem & Turmeric Face Wash:</strong> Natural acne solution.</li>
+      <li><strong>Organic Hair Oils:</strong> Amla, coconut, castor oil blends.</li>
+    </ul>
+  </div>
+</div>
